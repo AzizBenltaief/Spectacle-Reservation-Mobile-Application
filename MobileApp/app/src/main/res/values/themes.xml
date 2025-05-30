@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- ==================== -->
+    <!--      Base Themes     -->
+    <!-- ==================== -->
+
+    <!-- Base theme WITH ActionBar -->
+    <style name="Base.Theme.SpectacleProjet.WithActionBar" parent="Theme.Material3.DayNight">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/purple_700</item>
+
+        <!-- Status/Nav bar -->
+        <item name="android:statusBarColor">?attr/colorPrimaryContainer</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryContainer</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+
+        <!-- Components -->
+        <item name="searchViewStyle">@style/CustomSearchView</item>
+        <item name="chipStyle">@style/Chip.App</item>
+    </style>
+
+    <!-- Base theme WITHOUT ActionBar -->
+    <style name="Base.Theme.SpectacleProjet.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/purple_700</item>
+
+        <!-- Status/Nav bar -->
+        <item name="android:statusBarColor">?attr/colorPrimaryContainer</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryContainer</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+
+        <!-- Components -->
+        <item name="searchViewStyle">@style/CustomSearchView</item>
+        <item name="chipStyle">@style/Chip.App</item>
+    </style>
+
+    <!-- ==================== -->
+    <!--    Splash Themes     -->
+    <!-- ==================== -->
+    <style name="Theme.SpectacleProjet.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/bg_gradient_purple</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.SplashScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_gradient_purple</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentTransitions">false</item>
+        <item name="android:windowSplashScreenBackground">@color/purple_700</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenAnimationDuration">0</item>
+    </style>
+
+    <style name="CircleShapeAppearance" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- ==================== -->
+    <!--   Component Styles   -->
+    <!-- ==================== -->
+    <style name="CustomSearchView" parent="Widget.Material3.SearchView">
+        <item name="android:background">@drawable/searchbar_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white_transparent</item>
+        <item name="queryBackground">@android:color/transparent</item>
+        <item name="searchHintIcon">@null</item>
+        <item name="searchPrefixText">""</item>
+    </style>
+
+    <style name="CustomChipStyle" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="chipBackgroundColor">#20FFFFFF</item>
+        <item name="chipStrokeColor">#80FFFFFF</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipIconTint">#FFFFFF</item>
+    </style>
+
+    <style name="Chip.App" parent="Widget.Material3.Chip.Assist">
+        <item name="android:textAppearance">@style/TextAppearance.Chip</item>
+        <item name="chipBackgroundColor">@color/purple_200</item>
+    </style>
+
+    <style name="TextAppearance.Chip" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- ==================== -->
+    <!--   App Theme Variants -->
+    <!-- ==================== -->
+    <style name="Theme.SpectacleProjet" parent="Base.Theme.SpectacleProjet.WithActionBar" />
+
+    <!-- Theme for activities without ActionBar -->
+    <style name="Theme.SpectacleProjet.NoActionBar" parent="Base.Theme.SpectacleProjet.NoActionBar" />
+
+    <style name="Theme.SpectacleProjet.Detail" parent="Theme.SpectacleProjet">
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+</resources>

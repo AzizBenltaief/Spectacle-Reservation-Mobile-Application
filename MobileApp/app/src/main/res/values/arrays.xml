@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="payment_methods">
+        <item>D17</item>
+        <item>Mobiflouss</item>
+        <item>Floussi</item>
+        <item>Carte Bancaire</item>
+    </string-array>
+
+    <string-array name="ticket_categories">
+        <item>Gold</item>
+        <item>Silver</item>
+        <item>Normal</item>
+    </string-array>
+
+    <string-array name="dates_array">
+        <item>2025-05-01 à 18:00</item>
+        <item>2025-05-02 à 18:00</item>
+        <item>2025-05-03 à 18:00</item>
+    </string-array>
+</resources>

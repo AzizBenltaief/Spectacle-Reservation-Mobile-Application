@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SpectaGo</string>
+    <string name="spectacle_image_desc">Affiche du spectacle %s</string>
+    <string name="splash_subtitle">Discover Amazing Shows</string>
+    <string name="splash_slogan">Réservez vos places en un clic</string>
+    <string name="copyright">© 2025 Spectacles App. Tous droits réservés.</string>
+    <string name="app_logo">Logo de l\'application</string>
+    <string name="confirmation">Votre confirmation vient d\'être envoyée par email ! Profitez bien du spectacle !</string>
+</resources>
